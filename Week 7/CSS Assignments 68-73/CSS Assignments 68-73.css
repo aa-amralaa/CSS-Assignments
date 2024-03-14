@@ -1,0 +1,186 @@
+/* No. 1 */
+* {
+  box-sizing: border-box;
+}
+
+.assign1 {
+  width: 150px;
+  height: 100px;
+  margin: 50px auto;
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+}
+
+.assign1::after,
+.assign1::before {
+  position: absolute;
+  content: "";
+  background-color: #ff5722;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.assign1::after {
+  transform: skew(10deg, 10deg);
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}
+
+.assign1::before {
+  transform: skew(-10deg, -10deg);
+  -webkit-transform: skew(-10deg, -10deg);
+  -moz-transform: skew(-10deg, -10deg);
+  -ms-transform: skew(-10deg, -10deg);
+  -o-transform: skew(-10deg, -10deg);
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 {
+  background-color: #009688;
+  width: 150px;
+  height: 100px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  position: relative;
+  line-height: 100px;
+}
+
+.assign2::before {
+  position: absolute;
+  content: "";
+  background-color: #009688;
+  width: 120%;
+  height: 100%;
+  z-index: -1;
+  right: 25px;
+  top: 0;
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+}
+
+.assign2::after {
+  position: absolute;
+  content: "";
+  background-color: #009688;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  right: 20px;
+  top: 0;
+  border-left: 8px solid white;
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -ms-transform: skew(20deg);
+  -o-transform: skew(20deg);
+}
+/* ===================================================================== */
+/* No. 3 */
+/* .class {
+  matrix(3, 0.2679, 0, 3, 20, 100);
+  scaleX = 3 , skewY = 0.2679 , skewX = 0 , scaleY = 3 ,translateX = 20 ,translateY = 100    
+} */
+/* ===================================================================== */
+/* No. 4 */
+.assign4 {
+  width: 200px;
+  height: 200px;
+  background-color: #607d8b;
+  border-bottom: 5px solid black;
+  position: relative;
+  margin: 120px auto;
+}
+
+.assign4::after {
+  position: absolute;
+  content: "Elzero";
+  color: white;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 0;
+  bottom: 0;
+}
+
+.assign4::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  width: 137px;
+  height: 136px;
+  top: -71px;
+  left: 29px;
+  transform: rotateZ(45deg);
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+/* ===================================================================== */
+/* No. 5 */
+.assign5 {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: #03A9F3;
+  position: relative;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.assign5::after {
+  position: absolute;
+  content: "Front";
+  background-color: #ea2264;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assign5::before {
+  position: absolute;
+  content: "Back";
+  background-color: #03A9F3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.assign5:hover{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/* ===================================================================== */

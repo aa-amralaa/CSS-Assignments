@@ -1,0 +1,60 @@
+/* No. 1 */
+.div1 {
+  padding: 20px;
+  border: 2px solid #ff5722;
+}
+
+.assign1 {
+  border: inherit;
+  padding: inherit;
+  background-color: #eee;
+  text-align: center;
+}
+
+.div2 {
+  padding: 20px;
+  border: 2px solid #009688;
+}
+
+.assign2 {
+  border: inherit;
+  padding: inherit;
+  background-color: #eee;
+  text-align: center;
+}
+/* ===================================================================== */
+/* No. 2 */
+.shape1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.shape2
+{
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+.shape3 {
+  font-family: 'Jomhuria', cursive;
+  font-weight: 400;
+}
+/* ===================================================================== */
+/* No. 3 */
+html {
+  font-size: 20px;
+}
+
+.no1 {
+  font-size: 2.5rem;
+}
+
+.no2 {
+  font-size: 2rem;
+}
+
+.no3 {
+  font-size: 1.5rem;
+}
+/* ===================================================================== */

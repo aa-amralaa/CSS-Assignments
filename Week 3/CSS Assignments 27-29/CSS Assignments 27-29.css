@@ -1,0 +1,58 @@
+/* No. 1 */
+.parent {
+  background-color: #eee;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.parent div {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+.row-one {
+  width: calc(100% - 30px);
+}
+
+.row-two {
+  width: calc((100% - 60px)/3);
+}
+
+.row-three {
+  width: calc((100% - 45px)/2);
+}
+
+.row-four {
+  width: calc((100% - 75px)/4);
+  margin-bottom: 15px;
+}
+/* ===================================================================== */
+/* No. 2 */
+.child div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: rgb(179, 179, 179)
+}
+
+.child .one {
+  background-color: rgb(179, 179, 179 ,.1)
+}
+
+.child .two {
+  opacity: .1;
+}
+
+
+/* ===================================================================== */

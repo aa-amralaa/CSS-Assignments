@@ -1,0 +1,79 @@
+/* No. 1 */
+.parent {
+  width: 400px;
+  background-color: #eee;
+  margin: 50px auto;
+  padding: 20px;
+  height: 280px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.son {
+  background-color: #ddd;
+  height: 70px;
+  width: 360px;
+  padding: 10px;
+  margin: 10px;
+  text-align: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 70px;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-timing-function: linear;
+}
+
+.parent:hover {
+  margin-top: 0px;
+}
+
+.parent:hover .son {
+  margin-top: 70px;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 div {
+  background-color: #ddd !important;
+  color: transparent !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px !important;
+  font-weight: bold;
+  padding: 20px;
+  border: none !important;
+  text-align: center;
+  position: relative;
+}
+
+.assign2 div::after {
+  position: absolute;
+  color: black;
+  content: "Elzero";
+  left: 500px;
+}
+/* ===================================================================== */
+/* No. 3 */
+/* :root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+} */
+
+.assign3 div {
+  border: 3px solid var(--mainColor, black);
+  color: var(--mainColor, red);
+  padding: var(--mainPadding, 10px);
+  margin: var(--mainPadding, 10px) auto;
+  width: 400px;
+}
+/* ===================================================================== */

@@ -1,0 +1,32 @@
+/* No. 1 */
+div div span.title {
+  color: red;
+}
+div span.title {
+  color: blue;
+}
+div p {
+  color: green;
+}
+div.title {
+  color: green;
+}
+div p,
+div.title {
+  color: green;
+}
+/* ===================================================================== */
+/* No.2 */
+.title-one,
+.title-two,
+.title-three,
+.title-four {
+  background-color: #a52a2a;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  width: fit-content;
+  max-width: 400px;
+  max-height: 20px;
+  overflow: visible;
+}

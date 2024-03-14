@@ -1,0 +1,71 @@
+/* No. 1 */
+/* Any Element With Class Title */
+.title {
+}
+
+/* Only Element With ID nav*/
+#nav {
+}
+
+/* All Elements call div in page */
+div {
+}
+
+/* All Elements call h2 in page */
+h2 {
+}
+/* ===================================================================== */
+/* No. 5 */
+/* Valid */
+._user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Not valid */
+.1user-name {
+}
+
+/* Not valid */
+.@user-name {
+}
+
+/* Not valid */
+.user@name {
+}
+
+/* Valid */
+._user10name {
+}
+
+/* Valid */
+.u {
+}
+/* ===================================================================== */
+/* No. 6 */
+/* Bad */
+.USERNAME {
+}
+
+/* Bad */
+.UserName {
+}
+
+/* Good */
+.user-name {
+}
+
+/* Bad */
+.userName {
+}
+
+/* Bad */
+.usernameprofile {
+}
+/* ===================================================================== */

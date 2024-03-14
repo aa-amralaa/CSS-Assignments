@@ -1,0 +1,237 @@
+/* No. 1 */
+.assign1 div {
+  background-color: #ddd;
+  color: #ff5722;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  display: flex;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: -7px 0px 0px #03a9f4, 7px 0px 0px #ff5722;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 {
+  margin: 20px auto;
+  background-color: #ddd;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.assign2 div {
+  background-color: #f44336;
+  color: white;
+  width: calc(80% / 3);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+}
+/* ===================================================================== */
+/* No. 3 */
+.assign3 {
+  margin: 20px auto;
+  background-color: #ddd;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.assign3 div {
+  background-color: #607d8b;
+  color: white;
+  width: calc(80% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.assign3 .one {
+  order: 6;
+  align-self: flex-end;
+}
+
+.assign3 .two {
+  order: 5;
+}
+
+.assign3 .three {
+  order: 2;
+  align-self: flex-start;
+}
+
+.assign3 .four {
+  order: 3;
+}
+
+.assign3 .five {
+  order: 4;
+}
+
+.assign3 .six {
+  order: 1;
+}
+/* ===================================================================== */
+/* No. 4 */
+.assign4 {
+  margin: 20px auto;
+  background-color: #ddd;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.assign4 div {
+  background-color: #009688;
+  color: white;
+  height: calc(90% / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assign4 .one {
+  align-self: flex-end;
+  width: 5%;
+}
+
+.assign4 .two {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.assign4 .three {
+  align-self: flex-end;
+  width: 5%;
+}
+/* ===================================================================== */
+/* No. 5 */
+* {
+  box-sizing: border-box;
+}
+
+.assign5 {
+  margin: 20px auto;
+  background-color: #ddd;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.assign5 div {
+  color: white;
+  width: calc(70% / 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 50%;
+}
+.assign5 .one {
+background-color: #ff9800;
+order: 2;
+}
+
+.assign5 .two {
+background-color: #8bc34a;
+order: 3;
+align-self: flex-end;
+}
+
+.assign5 .three {
+background-color: #795548;
+order: 4;
+}
+
+.assign5 .four {
+background-color: #673ab7;
+order: 1;
+align-self: flex-end;
+}
+/* ===================================================================== */
+/* No. 6 */
+:root {
+  --background-color: #ddd;
+  --padding: 10px;
+  --margin: 10px;
+}
+
+.page {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.links {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  list-style: none;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.links li {
+  padding: var(--padding);
+}
+
+.main-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content,
+.sidebar {
+  display: flex;
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  height: 400px;
+  width: calc(100% / 3);
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  display: flex;
+  justify-content: space-between;
+}
+/* ===================================================================== */

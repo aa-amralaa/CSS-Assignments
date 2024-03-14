@@ -1,0 +1,103 @@
+/* No. 1 */
+.assign1 div {
+  margin: 50px auto;
+  background-color: #eee;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px;
+}
+
+.assign1 div:empty {
+  background-color: red;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 div {
+  margin: 50px auto;
+  background-color: #ddd;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  position: relative;
+}
+
+.assign2 div:first-letter {
+  content: "";
+  position: absolute;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  margin-left: -30px;
+  margin-right: 15px;
+}
+/* ===================================================================== */
+/* No. 3 */
+.assign3 p {
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+  width: 320px;
+  height: 15px;
+  position: relative;
+  border-left: 5px solid #e91e63;
+}
+
+.assign3 p::before {
+  content: attr(data-person);
+  position: absolute;
+  background-color: #ddd;
+  padding: 20px;
+  left: -115px;
+  top: 0;
+  width: 45px;
+  height: 15px;
+}
+
+.assign3 p::after {
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-color: transparent #e91e63 transparent transparent;
+  top: 18px;
+  left: -24px;
+}
+/* ===================================================================== */
+/* No. 4 */
+.assign4 p {
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+  height: 20px;
+  /* way to get orange right border */
+  /* border-right: 5px solid #f44336; */
+  position: relative;
+  counter-increment: number;
+}
+
+.assign4 p::before {
+  content: counter(number);
+  position: absolute;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  height: 20px;
+  top: 0;
+  left: -28px;
+}
+
+/* other way to get orange right border */
+.assign4 p::after {
+  content: "";
+  position: absolute;
+  background-color: #f44336;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+/* ===================================================================== */

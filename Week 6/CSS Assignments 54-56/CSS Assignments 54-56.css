@@ -1,0 +1,100 @@
+/* No. 1 */
+* {
+  box-sizing: border-box;
+}
+
+.assign1 {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #eee;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  padding: 30px;
+  position: relative;
+  border-left: 10px solid #f44336;
+  border-right: 10px solid #673ab7;
+}
+
+.assign1::first-letter {
+  content: "";
+  position: absolute;
+  color: #f44336;
+}
+
+.assign1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  background-image: linear-gradient(
+    to right,
+    #f44336,
+    #f44336 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    #4caf50 40%,
+    #4caf50 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #673ab7 80%
+  );
+  height: 10px;
+  width: 600px;
+}
+
+.assign1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  background-image: linear-gradient(
+    to right,
+    #f44336,
+    #f44336 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    #4caf50 40%,
+    #4caf50 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #673ab7 80%
+  );
+  height: 10px;
+  width: 600px;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 {
+  width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.assign2 input {
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  width: 560px;
+  caret-color: #f44336;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid;
+  border-image-source: linear-gradient(
+    to right,
+    #f44336 50%,
+    #009688 50%,
+    #009688 100%
+  );
+  border-image-slice: 1;
+}
+
+.assign2 input:focus {
+  outline: none;
+}
+/* ===================================================================== */

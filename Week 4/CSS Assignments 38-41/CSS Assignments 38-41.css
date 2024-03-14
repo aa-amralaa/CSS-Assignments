@@ -1,0 +1,183 @@
+/* No. 1 */
+.assign1 div {
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  outline: 2px solid black;
+  display: inline-block;
+  margin: 20px 10px auto;
+  box-shadow: -7px -7px 0px 0px #e91e63 ,
+              7px 7px 0px 0px #2196f3 ;
+  position: relative;
+  counter-increment: number;
+}
+
+.assign1 div::before {
+  content: counter(number);
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  top: -11px;
+  left: 37px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  text-align: center;
+}
+
+.assign1 div::after {
+  content: "Element";
+  position: absolute;
+  top: 40px;
+  left: 23px;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 div {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  background-color: #ddd;
+  border-top-left-radius: 10px 27px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 10px 27px;
+  border-bottom-left-radius: 50px;
+  -webkit-border-top-left-radius: 10px 27px;
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 10px 27px;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-top-left-radius: 10px 27px;
+  -moz-border-top-right-radius: 50px;
+  -moz-border-bottom-right-radius: 10px 27px;
+  -moz-border-bottom-left-radius: 50px;
+  -ms-border-top-left-radius: 10px 27px;
+  -ms-border-top-right-radius: 50px;
+  -ms-border-bottom-right-radius: 10px 27px;
+  -ms-border-bottom-left-radius: 50px;
+  -o-border-top-left-radius: 10px 27px;
+  -o-border-top-right-radius: 50px;
+  -o-border-bottom-right-radius: 10px 27px;
+  -o-border-bottom-left-radius: 50px;
+  box-shadow: inset 0px 0px 9px 5px #898383;
+}
+/* ===================================================================== */
+/* No. 3 */
+
+/* 
+  other way to parallel two boxes
+*/
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.assign3 {
+  width: 550px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.shape1,
+.shape2 {
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 200px;
+  height: 245px;
+  margin: 20px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  float: left;
+  /*   other way to parallel two boxes
+    display: inline-block;
+  */
+}
+
+.basic,
+.pro {
+  color: white;
+  background-color: #03a9f4;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 10px;
+  width: 170px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.free,
+.price {
+  background-color: #eee;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 85px;
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -ms-border-radius: 85px;
+  -o-border-radius: 85px;
+  margin: 10px;
+  line-height: 170px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.or {
+  background-color: #03a9f4;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top:130px;
+  left:225px;
+}
+
+.or::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 116px;
+  background-color: #03a9f4;
+  top: -110px;
+  left: 14px;
+}
+.or::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 110px;
+  background-color: #03a9f4;
+  top: 25px;
+  left: 14px;
+}
+/* ===================================================================== */

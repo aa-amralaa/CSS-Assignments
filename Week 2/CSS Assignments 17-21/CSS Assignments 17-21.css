@@ -1,0 +1,59 @@
+/* No. 1 */
+.assign-1 {
+  text-transform: capitalize;
+  text-shadow: 0.5px 0px 0 #f24336, 1px 0px 0 #2196f3,1.5px 0px 0 #9c27b0;
+}
+/* ===================================================================== */
+/* No. 2 */
+.one {
+  text-transform: uppercase;
+}
+.two {
+  text-transform: capitalize;
+}
+.three {
+  text-transform: lowercase;
+}
+/* ===================================================================== */
+/* No. 3 */
+.assign-3-1 {
+  background-color: #eeeeee;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+.assign-3-2 {
+  background-color: #eeeeee; 
+  width: 235px;
+  margin: 20px;
+  padding: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.assign-3-3 {
+  background-color: #eeeeee;
+  width: 330px;
+  margin: 20px;
+  padding: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* ===================================================================== */
+/* No. 4 */
+a {
+  display: block;
+  color: white;
+  background-color: #009688;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 10px 30px;
+  width: fit-content;
+  border-bottom: 10px solid #00514a;
+}
+/* ===================================================================== */

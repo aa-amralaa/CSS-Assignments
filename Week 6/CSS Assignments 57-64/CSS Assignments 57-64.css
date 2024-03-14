@@ -1,0 +1,291 @@
+/* No. 1 */
+.assign1 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:50px 1fr;
+  margin: 20px auto;
+}
+
+.assign1 .grid div {
+  display: grid;
+  background-color: #607d8b;
+  counter-increment: number;
+}
+
+.assign1 .grid div::before {
+  display: grid;
+  content: "Element " counter(number);
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+/* ===================================================================== */
+/* No. 2 */
+.assign2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: 
+  "head head head head head head head head head head" 
+  "sec sec sec sec sec sec sec side side side" 
+  "foot foot foot foot foot foot foot foot foot foot";
+}
+
+.assign2 header {
+  grid-area: head;
+  background-color: #03a9f4;
+  padding: 10px;
+}
+
+.assign2 header::before {
+  content: "Header";
+  color: white;
+}
+
+.assign2 section {
+  grid-area: sec;
+  background-color: #ff5722;
+  padding: 10px;
+}
+
+.assign2 section::before {
+  content: "Section";
+  color: white;
+}
+
+.assign2 aside {
+  grid-area: side;
+  background-color: #607d8b;
+  padding: 10px;
+}
+
+.assign2 aside::before {
+  content: "Aside";
+  color: white;
+}
+
+.assign2 footer {
+  grid-area: foot;
+  background-color: #009688;
+  padding: 10px;
+}
+
+.assign2 footer::before {
+  content: "Footer";
+  color: white;
+}
+/* ===================================================================== *  
+/* No. 3 */
+.assign3 {
+  background-color: #ddd;
+  display: grid;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  grid-template-columns: auto repeat(2, 1fr) auto;
+  grid-template-rows: 1fr auto;
+  gap: 15px;
+}
+
+.assign3 div {
+  background-color: #403f3f;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================================================================== *  
+/* No. 4 */
+.assign4 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.assign4 div {
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.assign4 .one {
+  grid-area: 6 / 1 / 6 / 6;
+}
+
+.assign4 .two {
+  grid-area: 2 / 1 / 2 / 4;
+}
+
+.assign4 .three {
+  grid-area: 2 / 4 / 2 / 6;
+}
+
+.assign4 .four {
+  grid-area: 3 / 1 / 3 / 2;
+}
+
+.assign4 .five {
+  grid-area: 3 / 2 / 6 / 6;
+}
+
+.assign4 .six {
+  grid-area: 4 / 1 / 4 / 2;
+}
+
+.assign4 .seven {
+  grid-area: 5 / 1 / 5 / 2;
+}
+
+.assign4 .eight {
+  grid-area: 1 / 1 / 2 / 6;
+}
+/* ===================================================================== *  
+/* No. 5 */
+.assign5 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  align-content: space-between;
+}
+
+.assign5 div {
+  display: grid;
+  background-color: #e91e63;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================================================================== *  
+/* No. 6 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.assign6 {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 15px;
+}
+
+.assign6 div {
+  padding: 15px;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  margin-bottom: 10px;
+  color: #a8a8a8;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.head1 .p1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: x-large;
+}
+
+.head1 .p2 {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: x-large;
+}
+
+
+
+.head1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.head2 {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.side {
+  grid-area: 1 / 4 / 7 / 4;
+}
+
+.section {
+  grid-area: 3 / 1 / 7 / 2;
+}
+
+.content1 {
+  grid-area: 3 / 2 / 5 / 4;
+}
+
+.content2 {
+  grid-area: 5 / 2 / 7 / 4;
+}
+
+.assign6 div {
+  border-bottom: 5px solid #ff3f02;
+  position: relative;
+}
+
+.assign6 div::after {
+  position: absolute;
+  content: "''";
+  right: 15px;
+  bottom: -25px;
+  font-size: 60px;
+  color: #a8a8a8;
+  transform: rotate(13deg);
+  -webkit-transform: rotate(13deg);
+  -moz-transform: rotate(13deg);
+  -ms-transform: rotate(13deg);
+  -o-transform: rotate(13deg);
+}
+/* ===================================================================== *  
